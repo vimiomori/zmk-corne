@@ -49,10 +49,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp MINUS        &kp LS(PLUS)  &kp LBKT      &kp RBKT      &kp LS(COLON)    &kp MINUS  &kp LS(COLON)  &kp EQUAL  &kp MINUS  &kp LS(UNDER)  &kp LS(TILDE)
-&kp TILDE  &kp EXCLAMATION  &kp LS(AT)    &kp LS(LPAR)  &kp LS(RPAR)  &kp EQUAL        &kp LEFT   &kp DOWN       &kp UP     &kp RIGHT  &kp BSLH       &kp GRAVE
-&kp LSHFT  &trans           &trans        &kp LS(LBRC)  &kp LS(RBRC)  &kp LS(EXCL)     &kp UNDER  &kp PLUS       &kp LBRC   &kp RBRC   &kp PIPE       &kp TILDE
-                                          &kp LGUI      &trans        &kp SPACE        &kp RET    &trans         &kp RALT
+&kp GRAVE  &kp MINUS        &kp PLUS       &kp LBKT              &kp RBKT               &kp COLON          &kp MINUS  &kp COLON  &kp EQUAL  &kp MINUS      &kp LS(UNDER)  &kp GRAVE
+&kp TILDE  &kp EXCLAMATION  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL          &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &kp BSLH       &kp TILDE
+&kp LSHFT  &kp PIPE         &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp UNDER  &kp EXCL   &kp EQUAL  &kp BACKSLASH  &kp PIPE       &kp TILDE
+                                           &kp LGUI              &trans                 &kp SPACE          &kp RET    &trans     &kp RALT
             >;
         };
     };
