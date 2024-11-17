@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp ESCAPE  &kp EXCLAMATION       &kp AT                &kp POUND             &kp DOLLAR            &kp PERCENT             &kp CARET      &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
-&kp GRAVE   &kp N1                &kp N2                &kp N3                &kp N4                &kp N5                  &kp N6         &kp N7    &kp N8        &kp N9                &kp N0                 &trans
-&mo 4 &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                                                        &kp LGUI              &trans                &kp SPACE               &kp LG(SPACE)  &mo 3     &kp RALT
+&kp ESCAPE  &kp EXCLAMATION  &kp AT  &kp POUND  &kp DOLLAR  &kp PERCENT    &kp CARET      &kp AMPS  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSPC
+&kp GRAVE   &kp N1           &kp N2  &kp N3     &kp N4      &kp N5         &kp N6         &kp N7    &kp N8        &kp N9                &kp N0                 &trans
+&mo 4       &trans           &trans  &trans     &trans      &trans         &trans         &trans    &trans        &trans                &trans                 &trans
+                                     &kp LGUI   &trans      &kp SPACE      &kp LG(SPACE)  &mo 3     &kp RALT
             >;
         };
 
@@ -50,14 +50,14 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE     &kp MINUS        &kp PLUS       &kp LBKT              &kp RBKT               &kp PLUS         &kp MINUS  &kp COLON  &kp EQUAL  &kp EXCL       &kp LS(UNDER)  &kp GRAVE
-&kp TILDE     &kp EXCLAMATION  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT      &kp BSLH       &kp TILDE
-&kp LEFT_ALT  &kp PIPE         &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS        &kp UNDER  &kp EXCL   &kp EQUAL  &kp BACKSLASH  &kp PIPE       &kp TILDE
-                                              &kp LGUI              &mo 3                  &kp LA(SPACE)    &kp RET    &trans     &kp RALT
+&kp GRAVE     &kp MINUS        &kp PLUS       &kp LBKT              &kp RBKT               &kp PLUS         &kp MINUS  &kp COLON  &kp EQUAL    &kp EXCL       &kp LS(UNDER)  &kp GRAVE
+&kp TILDE     &kp EXCLAMATION  &kp AT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp LEFT   &kp DOWN   &kp UP       &kp RIGHT      &kp BSLH       &kp TILDE
+&kp LEFT_ALT  &kp PIPE         &kp BACKSLASH  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp MINUS        &kp UNDER  &kp EXCL   &kp EQUAL    &kp BACKSLASH  &kp BACKSLASH  &kp TILDE
+                                              &mo 5                 &mo 3                  &kp LA(SPACE)    &kp RET    &trans     &mt GLOBE E
             >;
         };
 
-        layer_3 {
+        control_alt {
             bindings = <
 &trans  &kp LC(LA(Q))  &kp LC(LA(W))  &kp LC(LA(E))  &kp LC(LA(R))  &kp LC(LA(T))    &kp LC(LA(Y))  &kp LC(LA(U))  &kp LC(LA(I))  &kp LC(LA(O))  &kp LC(LA(P))  &trans
 &trans  &kp LC(LA(A))  &kp LC(LA(S))  &kp LC(LA(D))  &kp LC(LA(F))  &kp LC(LA(G))    &kp LC(LA(H))  &kp LC(LA(J))  &kp LC(LA(K))  &kp LC(LA(L))  &kp SEMI       &trans
@@ -66,11 +66,20 @@
             >;
         };
 
-        layer_4 {
+        command_shift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans       &kp LS(LG(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))    &mt GLOBE E    &kp E     &trans        &trans                &trans                 &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                &trans                &mt GLOBE E           &trans                &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LG(NUMBER_1))  &kp LS(LG(NUMBER_2))  &kp LS(LG(NUMBER_3))  &kp LS(LG(NUMBER_4))  &kp LS(LG(NUMBER_5))    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR
+&trans  &trans                &trans                &trans                &trans                &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                                                    &trans                &trans                &trans                  &trans  &trans  &trans
+            >;
+        };
+
+        command_alt {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LG(LA(I))  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans         &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
